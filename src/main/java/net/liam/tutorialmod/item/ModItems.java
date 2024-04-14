@@ -11,19 +11,20 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public  static final Item MTNDEW = registerItem("Mtn_Dew", new Item(new FabricItemSettings()));
+    public  static final Item MTN_DEW = registerItem("mtn_dew", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(MTNDEW);
+        entries.add(MTN_DEW);
     }
 
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name),  item);
+        return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
         TutorialMod.LOGGER.info("Registering Mod Items for " +TutorialMod.MOD_ID);
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
 }
