@@ -1,3 +1,7 @@
 {
-  "item.tutorialmod.mtn_dew": "Mtn Dew"
+  "item.tutorialmod.mtn_dew": "Mtn Dew",
+  "item.tutorialmod.btry_acid": "Battery Acid",
+
+  "block.tutorialmod.mt_dew_block": "Mtn Dew Block",
+  "itemgroup.soda": "Soda"
 }

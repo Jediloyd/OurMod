@@ -1,3 +1,4 @@
+
 package net.liam.tutorialmod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -12,8 +13,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block MT_DEW_BLOCK = registerBlock("MT_DEW_BLOCK",
-            new Block(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK)));
+    public static final Block MT_DEW_BLOCK = registerBlock("mt_dew_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.SLIME).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
